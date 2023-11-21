@@ -10,7 +10,7 @@
 <body>
 
     <div class="text_haut">
-        <div class="paragraphe"><p>This is a new website. <span style="font-size: 10px; margin-right: 2px;" ><a href="" >Give feedback</a> </span>  to help us improve it.</p> </div>
+        <div class="paragraphe"><p>This is a new website. <span style="font-size: 14px; margin-right: 2px;" ><a href="" >Give feedback</a> </span>  to help us improve it.</p> </div>
     </div>
     <!-- 1er_grand_bloc -->
     <div id="grand_bloc1">
@@ -27,17 +27,24 @@
         <div class="bloc_parent2">
             <img src="./asset/w3c-no-bars (1) - Copie.svg" alt="" style="margin-right: 50px;">
                 <div class="list_menu">
-                    <div>
-                        <ul>
-                            <a href=""><li>Standard</li></a>
-                            <a href=""><li>Group</li></a>
-                            <a href=""><li>Get involved</li></a>
-                            <a href=""><li>Resources</li></a>
-                            <a href=""><li>News and Events</li></a>
-                            <a href=""><li>About</li></a>
-                            <img src="./asset/search.svg" alt="" height="20px"  width="20px">
-                        </ul>
+                    <div class="menu-burger" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
                     </div>
+                    
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Standard</a></li>
+                            <li><a href="#">Group</a></li>
+                            <li><a href="#">Get involved</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">News and Events</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <img src="asset/search.svg" alt="" height="25px">
+                    </div>
+            
                 
                     <div class="profils">
                         <a href="#" style="font-size: 16px ; text-decoration: none;">Identifier</a>
@@ -54,12 +61,12 @@
             <aside>
 
             <h1 style="font-size: 48px; width: 500px;">Faire fonctionner<br> le Web</h1> 
-            <h3 style="height: 188px;">Le World Wide Web Consortium (W3C)<br><SPan style="color: #024488;"> élabore
-                 des normes et des directives</SPan><br> pour aider
+            <h3 style="height: 188px;">Le World Wide Web Consortium (W3C)<br><SPan style="color: #024488;"><a href="" style="font-size: 23px;"> élabore
+                 des normes et des directives</a></SPan><br> pour aider
                   chacun à construire un<br> Web basé sur les
-                   principes d' <SPan style="color: #024488;">accessibilité,</SPAn><br>
-                   d'internationalisation ,<SPan style="color: #024488;"> de confidentialité et<br>
-                    de sécurité .</span></h3> <br> <br>
+                   principes d' <SPan style="color: #024488;"><a href="" style="font-size: 23px;">accessibilité,</a></SPAn><br>
+                   d'internationalisation ,<SPan style="color: #024488;"><a href="" style="font-size: 23px;"> de confidentialité et<br>
+                    de sécurité </a>.</span></h3> <br> <br>
             <button>En savoir plus sur le W3C </button> 
             </aside>
 
@@ -74,14 +81,14 @@
         <div class="bloc_parent4">
             <h1>Travailler avec les acteurs du Web</h1> <br> 
 
-            <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Un éventail d'organisations rejoignent le World Wide Web Consortium en tant que <br>
+            <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Un éventail d'organisations rejoignent le World Wide Web Consortium en tant <br> que 
                  membres pour travailler avec nous afin d'orienter les technologies Web de base et <br>
                  d'échanger des idées avec des leaders de l'industrie et de la recherche. Nous faisons <br>
                  tourner au hasard quelques-uns des logos de nos organisations membres en dessous.</p> <br> 
 
                   <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Le Web Consortium et ses membres, avec l'aide du public et de la communauté Web, se <br>
                      concentrent sur une gamme d'écosystèmes commerciaux que le Web transforme,<br>
-                     notamment le  commerce électronique ,  les médias et le divertissement , l'édition et <br>
+                     notamment le  <span><a href="" style="font-size: 18px;">commerce électronique</a></span> ,  <span><a href="" style="font-size: 18px;">les médias et le divertissement </a></span> , <span><a href="" style="font-size: 18px;">l'édition </a></span> et <br>
                       plusieurs autres domaines.</p>
 
 
@@ -113,9 +120,7 @@
                      membres et les conseils d'administration du W3C, les réunions des <br>
                       groupes de travail et d'intérêt du W3C, ainsi qu'une série de
                        sessions d'une heure animées par les participants.</p> <br> <br>
-                <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Cet événement très fréquenté et populaire est un moyen
-                    important pour le W3C de coordonner les solutions aux problèmes
-                    techniques qui transcendent les frontières du groupe. 
+                <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Cet événement très fréquenté et populaire est un moyen important pour le W3C de coordonner les solutions aux problèmes techniques qui transcendent les frontières du groupe. 
                 </p> <br><br>
                 <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Regardez notre courte vidéo pour en savoir plus sur TPAC</p> <br><br>
 
@@ -134,14 +139,14 @@
         </div>
 
             <div class="enfant4">
-                <h1>Normes Web</h1>
+                <h1>Normes Web</h1> <br>
 
-                <p style="font-size: 18px; line-height: 24px;">Les normes Web sont les éléments constitutifs d'un monde <br>
+                <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Les normes Web sont les éléments constitutifs d'un monde <br>
                  numériquement connecté cohérent. Ils sont implémentés dans les <br>
                  navigateurs, les blogs, les moteurs de recherche et d'autres <br>
                   logiciels qui alimentent notre expérience sur le Web.</p> <br><br>
-                <p>Le W3C est une communauté internationale où les membres , une <br>
-                    équipe à plein temps , et le public travaillent ensemble pour <br>
+                <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Le W3C est une communauté internationale où <span><a href="" style="font-size: 18px;">les membres</a></span> , le <br>
+                    <span style="color: violet;"><a href="" style="font-size: 18px;">personnel</a></span> à plein temps , et le public travaillent ensemble pour <br>
                     développer des normes Web.</p> <br> <br>
 
                 <button>En savoir plus les normes Web</button>
@@ -158,10 +163,10 @@
                 <div class="enfant6">
                     <h1>Être impliqué</h1> <br> 
     
-                    <p style="font-size: 18px; line-height: 24px; font-weight: normal;">Le W3C travaille au carrefour de la technologie de base, des<br>
-                        besoins de l'industrie et des besoins de la société. Tout le monde <br>
-                        peut s'impliquer dans le travail que nous faisons.</p> <br> <br>
-                      logiciels qui alimentent notre expérience sur le Web. <br>
+                    <p style="font-size: 18px; line-height: 24px; font-weight: normal;"> Le W3C travaille au carrefour de la technologie de base, des<br>
+                    besoins de l'industrie et des besoins de la société. Tout le monde <br>
+                    peut s'impliquer dans le travail que nous faisons.</p> <br> <br>
+                      logiciels qui alimentent notre expérience sur le Web.
                     <p style="font-size: 18px; line-height: 24px; font-weight: normal;
                     ;">Les particuliers et les organisations peuvent participer au Web <br>
                         Consortium de nombreuses façons pour faire progresser la <br>
@@ -180,35 +185,31 @@
                
 
                     <div class="bloc-family">
-                        <div class="text1"> <br><h4 style="font-size: 18px; font-weight: 600; font-weight: bold; text-align: start;">Projet de note : Vision pour le W3C</h4> <br><br>
-                            <p style="font-size: 16px; line-height: 24px; font-weight: normal;">La Vision tente d'aider le monde à comprendre ce qu'est le W3C,<br>
-                                ce qu'il fait et pourquoi c'est important ; et en particulier <br>
+                        <div class="text1"> <br><h4 style="font-size: 18px; font-weight: 600; font-weight: bold;    text-align: start;">Projet de note : Vision pour le W3C</h4> <br><br>
+                            <p style=" text-align: start;">La Vision tente d'aider le monde à comprendre ce qu'est le W3C,<br> ce qu'il fait et pourquoi c'est important ; et en particulier <br>
                                 d'articuler les principes selon lesquels <br>
-                                il fonctionne et qui guident ses décisions.</p> <br> <br> <p>Nouvelles</p> </div>
+                                il fonctionne et qui guident ses décisions.</p> <br> <br> <p style=" text-align: start;">Nouvelles</p> </div>
 
 
                         <div class="text1"> 
-                            <br><h4 style="font-size: 18px; font-weight: 600; font-weight: bold; text-align: start;">Sécuriser le Web vers  
-                             l'avant : répondre aux <br>
-                              préoccupations des développeurs en <br>
-                               matière de sécurité <br>
-                             Web</h4> <p>Une enquête récente <br>
+                            <br><h4  style="font-size: 18px; font-weight: 600; font-weight: bold; text-align: start;">Introduction et <br> objectifs et aspirations <br> du PDG</h4><br> 
+                             <p  style=" text-align: start;">Une enquête récente <br>
                                  affirme la nécessité de <br>
                                   sensibiliser les développeurs et de les faire <br>
                                    adopter aux normes et
-                           pratiques de sécurité Web</p> <br><br> <p>Blog</p>  
+                           pratiques de sécurité Web</p> <br><br> <p style=" text-align: start;">Blog</p>  
                         </div>
 
                         <div class="text1">
                             <br><h4 style="font-size: 18px; font-weight: 600; font-weight: bold; text-align: start;">Les directives pour l'accessibilité
                              des contenus Web (WCAG) 2.2 sont une proposition
-                             de recommandation du W3C</h4> <Br><br></Br> <br><br><br> <br> <br> <p>Nouvelles</p>
+                             de recommandation du W3C</h4> <Br><br></Br> <br><br><br> <br> <br> <p style=" text-align: start;">Nouvelles</p>
                         </div>
 
                         <div class="text1">
                             <br><h4 style="font-size: 18px; font-weight: 600; font-weight: bold; text-align: start;">Appel à révision : WoT Architecture 1.1, 
                             Thing Description 1.1 et WoT Discovery sont 
-                            des recommandations proposées par le W3C</h4> <br><br><br><br><br><br> <br><br><br>  <p>Nouvelles</p >
+                            des recommandations proposées par le W3C</h4> <br><br><br><br><br><br> <br><br><br>  <p style=" text-align: start;">Nouvelles</p >
                         </div>
                     </div>
                 </div>
@@ -237,7 +238,7 @@
                 </div>
 
                 <div class="second_footer">
-                    <p>Droits d'auteur © 2023</p>
+                    Droits d'auteur © 2023
                     <a href=""> Consortium World Wide Web</a>. <br>
                     <a href="">Les règles de responsabilité</a>,<br>
                     <a href="">de marque déposée</a>et <br>
@@ -250,6 +251,14 @@
         
     </div>
     </div>
+
+
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+    </script>
 
 
 

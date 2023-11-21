@@ -5,7 +5,35 @@
 
 body{
     overflow: auto;
-    font-family: noto sans;
+    font-family: noto sans 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Pour les petits écrans (Mobiles) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Ajuste la taille de la police pour les petits écrans */
+    }
+
+    /* Ajoute d'autres styles spécifiques aux petits écrans ici */
+    /* Par exemple, ajuster la taille des images, etc. */
+}
+
+/* Pour les écrans de taille moyenne (Tablettes) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 15px; /* Ajuste la taille de la police pour les tablettes */
+    }
+
+    /* Ajoute d'autres styles spécifiques aux tablettes ici */
+}
+
+/* Pour les grands écrans (Bureau) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px; /* Garde la taille de la police par défaut pour les grands écrans */
+    }
+
+    /* Ajoute d'autres styles spécifiques aux grands écrans ici */
 }
 
 
@@ -21,6 +49,14 @@ body{
     height: 40px;
     background-color: #cbe0fb;
 
+    @media screen and(max-width: 768px) {
+        p{
+            text-align: start;
+            font-size: 14px;
+        }
+        
+    }
+
 }
 
 /* debut_prermier_bloc */
@@ -28,6 +64,16 @@ body{
     background-color:#F8F8FB ;
     height: 40px;
     font-size: 10px;
+
+    @media screen and(max-width: 768px) {
+
+        .bloc_parent1{
+            width: auto;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+    }
 
     
 }
@@ -40,6 +86,16 @@ body{
     width: 1118px;
     gap: 25px;
     margin: 0 auto;
+
+    @media screen and(max-width: 768px) {
+        h2{
+            text-align: center;
+            font-size: 14px;
+        }
+        
+    }
+
+
 }
 /* fin_premier_bloc */
 
@@ -110,8 +166,8 @@ body{
 
 
 
-a{
-    font-size: 15px;
+.menu li a{
+    font-size: 18px;
 }
 /* Fin_deuxième_bloc */
 
@@ -250,30 +306,13 @@ button:hover{
    
 }
 
-
-
-/* .enfant1 h1{ font-size: 34px;
-}
-
-.enfant4 h1{ font-size: 34x;
+span{
+    color: #024488;
 }
 
 
-.enfant1 p{ font-size: 20px;
-}
 
-.enfant4 p{ font-size: 16px;
-    line-height: 14px;
-    font-weight: normal;
-}
 
-.enfant6 p{ font-size: 20px;
-}
-
-.enfant6 h1{ font-size: 34px;
-} */
-
-/* premier_groupe_enfant */
 .groupe_enfant1{
     margin: 0 auto;
     display: flex;
@@ -356,10 +395,22 @@ button:hover{
 }
 
 
-.text1{
+.bloc-family .text1{
     background-color: white;
     height: 399px;
     width: 255px;  
+}
+
+.bloc-family .text1 P{
+    margin: 0 auto;
+    width: 90%;
+    text-align: start;
+}
+
+.bloc-family .text1 h4{
+    margin: 0 auto;
+    width: 90%;
+    text-align: start;
 }
 
 .bloc_parent6 h4{
@@ -435,3 +486,60 @@ footer{
 
 
 
+.menu-burger {
+    display: none; /* Initiallement masqué sur les grands écrans */
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.menu {
+    display: flex; /* Initiallement masqué sur les grands écrans */
+    font: 18px;
+    line-height: 27px;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Styles spécifiques pour les petits écrans (tablettes et mobiles) */
+@media only screen and (max-width: 768px) {
+    .menu-burger {
+        display: block; /* Affiché sur les petits écrans */
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+}
